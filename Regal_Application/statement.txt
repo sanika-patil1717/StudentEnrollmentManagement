@@ -1,0 +1,82 @@
+You have to develope an application for Regal Classes.
+This application will be used by Admin only.
+Admin must be able to store the information of student which 
+will come for enquiry.Following information of the student must be stored.
+-Name of the Student
+-photo of a student
+-Phone Number
+-Email id
+-Birth Date
+-Local Address
+-Permanant Address
+-Hometown
+-Gender
+-College Name
+-Enquiry Date
+-Subjects he OR she is interested in.
+-Admin must be able to show the information of course like fee and duration.
+(Suggestion = You can create here 2 tables.One for student details and another for students enquiries.
+Just like customer and orders.)
+=================================================================================================
+In class, 2 types of students may come for enquiry.
+-New Student
+	-For new student,an entry will be maid in `students` table.For his/her enquiry,an
+entry will be made in enquiry table.To store information of new student,admin will click on NEW button.
+This will generate ID of new student.Then admin will enter all data and will click on SUBMIT button.
+
+-Old Student
+	-For old student,no any entry will be made in `students` table.But for his/her enquire,
+an entry will be made in `enquiry` table.Record of old student will be fetched by his phone number
+or ID.To search old student,admin will enter his or her phone number in phone number text field
+and will click on SEARCH button.If record is found,the details will be displayed on screen.
+Else 'Record not found' message will appear.
+=================================================================================================
+Photo of a student = 
+	-Admin must be able to click the photo of a student and store ir.
+=================================================================================================
+Phone Number = 
+	-Validation of only digits and only 10 OR 12 digits must be done.
+	-This field can not be empty.
+	-No two students can have same phone number.
+=================================================================================================
+Email Id =
+	-Validation for email should be done.
+=================================================================================================
+Birth Date = 
+	-Use JCalendar to get the birth date.
+=================================================================================================
+Local address =
+	-This is students current address.
+=================================================================================================
+Permanant address =
+	-This is the address where students Parents live.
+If both permanant and local address are same,you have to give an option to admin to choose same
+address.
+=================================================================================================
+Hometown = 
+	-This must be a combo box.Admin will choose hometown of a student.If hometown of student is not
+found in list,then admin should be able to save new hometown.
+=================================================================================================
+College Name = 
+	-This must be a combo box.Admin will select the college name of student.If college is not present,
+admin will add that college in database.
+================================================================================================
+Subjects =
+	-You can mention them using check boxes.
+	-Admin must be able to show available subjects with their fees and duration.
+	-Must be able to add new subject
+	-Must be able to change name and fee of any subject.
+=================================================================================================
+Your application must contain following options also
+Admin must be able 
+	-to check all the enquires.
+	-to check enquiries in a specific month
+	-to check enquiries from a specific college
+	-to check enquiries for specific subject.
+	-You can add more filters on your own.
+=================================================================================================
+When you start the application,login window will appear.Admin will log in first.
+If admin enters correct credentials,a mainframe will appear which gives two options
+to admin = 1) Student Enquiry
+	   2) Student Admission
+You task is to design application for Student enquiry only.
